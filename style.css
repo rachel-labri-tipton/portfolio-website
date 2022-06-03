@@ -317,13 +317,14 @@ h1, p, h3, h2, h6 {
   width: 75%;
   display: flex;
   justify-content: center;
+  flex-direction: row;
   margin: 0 auto;
   flex-wrap: wrap;
 }
 
 .contact-element {
-  max-width: 400px;
-  min-width: 400px;
+  max-width: 200px;
+  min-width: 100px;
   padding: 20px;
   margin: 20px;
   text-decoration: none;
@@ -331,10 +332,16 @@ h1, p, h3, h2, h6 {
   font-family: 'Barlow', sans-serif;
 }
 
-.contact-element ul {
-    text-decoration: none;
+.contact-icon {
+  max-width: 200px;
+  min-width: 100px;
+  height: 100px;
+  padding: 20px;
+  margin: 20px;
+  text-decoration: none;
+  background-color: whitesmoke;
+  font-family: 'Barlow', sans-serif;
 }
 
-.contact-image {
-    max-width: 200px;
-}
+
+
