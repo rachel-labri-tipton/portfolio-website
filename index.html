@@ -11,6 +11,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,800;1,300;1,400;1,800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,800;1,300;1,400;1,800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Rachel L'Abri Tipton Portfolio Website</title>
 </head>
@@ -22,10 +25,10 @@
     </div>
     <div>
     <ul class="nav-menu">
-        <li><a href="#general-assembly">General Assembly</a></li>
-        <li><a href="#projects">projects</a></li>
-        <li><a href="#skills">skills & frameworks</a></li>
         <li><a href="#about">about</a></li>
+        <li><a href="#projects">projects & learning</a></li>
+        <li><a href="#skills">skills & frameworks</a></li>
+         <li><a href="#resources">resources</a></li>
         <li><a href="#writing">writing</a></li>
         <li><a href="#contact"/>contact</a></li>
     </ul>
@@ -47,53 +50,237 @@
     </section>
 
     <!-- Projects -->
-    <section class="projects" id="projects">
+    
+    <section class="projects-wrapper" id="projects">
 
-        <div class="container">
-            <h1>projects</h1>
+        <div class="slideshow-container">
+            <h1>A slideshow will go here</h1>
         </div>
+            <div class="project-card-container">
+            <div class="project-card">
+            <h1>The Community Project</h1>
+            <h6>Python Django /  React / PostGreSQL</h6>
+            <p>Solo Project – 2 weeks: I built a Python Django REST Framework backend with a React Frontend. I wanted to build a template for friends and potential clients looking to build an online community. I loved working with Python and the Django REST Framework. Still a work in progress, I’m proud of my site’s registration and login functionality.</p>
+            <br>
+            <button><a href="https://capable-bunny-0040ae.netlify.app">See Project</a></button>
+            <button><a href="https://github.com/rachel-labri-tipton/the-community-project-frontend">Read Code</a></button>
+             </div>
+            <div class="project-card">
+            <h1>Simply Good Food</h1>
+            <h6>Mongoose / MongoDB / React / Node.js</h6>
+            <p>Group Project (2 people) – 2 weeks: Full-Stack MERN app with CRUD functionality that uses an MVC pattern. We made a clone of the Minimalist Baker website. Among my responsibilities were setting up initial backend API controllers and routes, initiating import of data into our database, and establishing the routes through our React frontend. I took the lead in deploying both our frontend on Netlify and back end on Heroku as well as made many of the project’s styling decisions. I’m proud of the Boot-React Carousel I effectively implemented.</p>
+            <br>
+            <button><a href="https://willowy-biscotti-b0cdbb.netlify.app">See Project</a></button>
+            <button><a href="https://github.com/rachel-labri-tipton/project-3-client- ">Read Code</a></button>
+        </div>
+            <div class="project-card">
+            <h1>The LSS (Local Space Station)</h1>
+            <h6>JavaScript / React / Insomnia </h6>
+            <p>Solo Project – 2 weeks: I built a Python Django REST Framework backend with a React Frontend. I wanted to build a template for friends and potential clients looking to build an online community. I loved working with Python and the Django REST Framework. Still a work in progress, I’m proud of my site’s registration and login functionality.</p>
+            <br>
+            <button><a href="https://mystifying-goldberg-c06879.netlify.app">See Project</a></button>
+            <button><a href="https://github.com/rachel-labri-tipton/project-2">Read Code</a></button>
+            </div>
+            <div class="project-card">
+            <h1>Tetris 2.022</h1>
+            <h6>HTML / CSS / Vanilla JavaScript </h6>
+            <p>Group Project (3 people) – 1 week: React App that consumes an API. Our app is a Space Calendar that uses the React Calendar Library and consumes NASA’s image of the day API. The takeaway from this project was coding with others and working in the same GitHub repo. I personally used this project to explore JavaScript dates, the Bulma styling library, and was the team member responsible for deploying our app. This game does not work on mobile devices, so check it out on a larger screen.</p>
+             <br>
+            <button><a href="https://elegant-murdock-a314ad.netlify.app">Play Game</a></button>
+            <button><a href="https://github.com/rachel-labri-tipton/sei-project-1-tetris">Read Code</a></button>
+        </div>
+        <div class="project-card">
+            <h1>GA Software Engineering Immersive</h1>
+            <h6>NOV 2021 – MAY 2022</h6>
+            <p>6 month part-time Software Engineering Immersive course completed alongside a full teaching schedule. This course was comprehensive, covering Web Development from front end to backend (ex. HTML5, CSS3, JavaScript, React, MVC Pattern, Python Django, Node.js, APIs) including both relational and non-relational databases (MongoDB, PostgreSQL). The class always started with standup.</p>
+            <br><p>I completed 4 solo and team project sprints which included standups, wireframing, database design, project management, and deployment.</p>
+            
+             </div>
+        </div>
+       
 
     </section>
+
+
 
 
     <!-- Skills & Frameworks -->
-    <section class="skills" id="skills">
-        <div class="container">
-            <h1>skills</h1>
-        </div>
-        <div class="code-language-icons">
+    <section class="skills-wrapper" id="skills">
+            <h3>Coding Languages & Frameworks</h3>
+    <div class="skills-container">
+                <div class="skills-card">
+<ul>
+    <li>Node.js</li>
+    <li>Git/GitHub</li>
+    <li>Python</li>
+    <li>PostgreSQL</li>
+    <li>Django</li>
+    <li>CSS</li>
+    <li>Bulma</li>
+</ul>
+                </div>
+                <div class="skills-card">
 
-        </div>
+<ul>
+    <li>Boostrap / React-Bootstrap</li>
+    <li>Tailwind</li>
+    <li>Poetry</li>
+    <li>Mongoose</li>
+    <li>JavaScript</li>
+</ul>
+                </div>
+                <div class="skills-card">
+<ul>
+    <li>Python</li>
+    <li>HTML</li>
+    <li>React</li>
+    <li>MondoDB</li>
+    <li>Express</li>
+    <li>Axios</li>
+    <li>Insomnia</li>
+</ul>
+                </div>
+</div>
+       
 
     </section>
+
+    
 
     <!-- About Me -->
-    <section class="about" id="about">
-        <div class="container">
+    <section class="about-me-wrapper" id="about">
+        <h1>about me</h1>
+        <div class="about-me-container">
+            <div class="about-info-card">
+            <h1>about me</h1>
+            <h2>why i love coding</h2>
+            <p>I am a Junior Full Stack Developer pivoting out of Freelance University English Teaching and Technical Editing and into Software Engineering. In mid-May 2022, I graduated from General Assembly’s JavaScript-Focused Software Engineering Immersive Course (details below). What I love about coding is that it feeds my inner data-loving language learner with logic and syntax while also allowing me to channel my creativity.</p>
+            <br><p>I speak English and French Fluently. I am American born and naturalized French.</p>
+            <br>
+            <h3>Soft Skills</h3>
+            <p>Written and Verbal Communication
+Autodidactic Learning
+Problem Solving  
+Supportive Collaboration
+Time Management  </p>
+<br>
+</div>
+
+        <div class="about-info-card">
             <h1>
-                about
+                about personal
             </h1>
         </div>
+
+         <div class="slideshow-container">
+            <h1>A slideshow will go here</h1>
+        </div>
+
     </section>
 
-    <!-- Writing  -->
+        <!-- Writing  -->
     <section class="writing" id="writing">
 
-        <div class="container">
-            <h1>
-                writing
-            </h1>
+        <div class="writing-wrapper">
+            <h1>writing</h1>
+            <div class="writing-info-container">
+                <div class="writing-card">
+                    <h1>writing</h1>
+                </div>
+                <div class="writing-card">
+                    <h1>recent publications</h1>
+                    <h3>Coding Career Shift: Getting Started</h1>
+                </div>
+            </div>
         </div>
-
     </section>
+
+
+    <!-- Resources and recommendations -->
+     <section class="resources" id="resources">
+
+        <div class="resources-wrapper">
+            <div> <h1>
+                resources & recommendations
+            </h1>
+        <br>
+        <h1>
+                websites
+            </h1>
+            <br>
+            <h1>
+                podcasts
+            </h1>
+            <br>
+            <h1>books & videos</h1>
+    </div>
+            
+            <div class="resources-card-container">
+                <div class="resources-card">
+                    <p>Traversy Media has proved to be a great place for me to start. I connect easily to Brad Traversy's approach to coding and have found his tutorials from Python to Tailwind to be accessible and enjoyable to follow. And his Boston accent adds to his charm.</p>
+                    <a href="https://www.traversymedia.com/"><h3>Traversy Media</h3></a>
+               </div>
+                <div class="resources-card">
+                    <p>Discovering the Code Newbie podcast has been wonderful. Anytime I had a new concept in my bootcamp,I'd search their archives on the topic to have a listen. They also place a lot of emphasis on career-pivot coders, which I definitely connect to.</p>
+                    <a href="https://www.codenewbie.org/podcast"><h3>Code Newbie</h3></a>
+               </div>
+                <div class="resources-card">
+                    <p>A List Apart was a recommendation from a friend who's been coding since the early 90's. This blog was super formative for him, and I've enjoyed reading their thoughtful articles both current and past. As I'm just transitioning to tech, this newsletter has provided some needed context.</p>
+                    <a href="https://alistapart.com/"><h3>A List Apart</h3></a>
+               </div>
+                 <div class="resources-card">
+                     <p>There are few time management resources that have helped me more than Laura Vanderkamp's Time Tracking worksheet and her book You have more Time than you Think. I highly recommend her TedTalk and this interview with Marie Forleo.</p>
+                   <a href="https://lauravanderkam.com/"><h3>Time Tracking Resources</h3></a>
+               </div>
+        </div>
+    </div>
+            
+    </section>
+
 
     <!-- Contact/Get in touch -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h1>
-             contact
-            </h1>
+    <section class="contact-wrapper" id="contact">
+        <!-- image -->
+        <div class="contact-container">
+            <div class="contact-image">
+                <h1>Put and image here</h1>
+                <img src="assets/images/image.jpg" alt="photo">
+            </div>
+       
+        <div class="contact-element">
+            <h1>I love connecting with people.</h1>
+                <h1>Here's how to reach me.</h1>
+        </div>
+           <div class="contact-element">
+            <a href="rachelmtipton@gmail.com"><h4>Email</h4></a>
+        </div>
+         <div class="contact-element">
+            <h1>I love connecting with people.</h1>
+                <h1>Here's how to reach me.</h1>
+        </div>
+         <div class="contact-element">
+            <h1>I love connecting with people.</h1>
+                <h1>Here's how to reach me.</h1>
+        </div>
+         <div class="contact-element">
+            <h1>I love connecting with people.</h1>
+                <h1>Here's how to reach me.</h1>
+        </div>
+         <div class="contact-element">
+            <h1>I love connecting with people.</h1>
+                <h1>Here's how to reach me.</h1>
+        </div>
+      
+            <ul class="contact-element">
+                <li> </li>
+                <li> <a href="https://github.com/rachel-labri-tipton"><h4>GitHub</h4></a></li>
+                <li>    <a href="https://www.linkedin.com/in/rachel-labri-tipton/"><h4>LinkedIn</h4></a></li>
+                <li><a href="https://www.instagram.com/thequietfight/"><h4>Instagram</h4></a></li>
+                <li><a href="https://medium.com/@rachel-labri-tipton"><h4>Medium</h4></a></li>
+            </ul>
+         
         </div>
     </section>
+
 </body>
 </html>

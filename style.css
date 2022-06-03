@@ -1,12 +1,11 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.about, .projects, .writing, .contact, .skills {
-  padding-top: 45px;
-}
+
 
 
 /* .container {
@@ -15,7 +14,7 @@
   padding: 0 15px;
 } */
 .container {
-  background: aqua;
+  background-image: url(/assets/images/susan-wilkinson-RZiTglNCeNc-unsplash.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -26,6 +25,12 @@
   justify-content: center;
   align-items: center;
 }
+
+.about, .projects, .writing, .contact, .skills, .resources {
+  padding-top: 45px;
+}
+
+
  
 
 
@@ -35,10 +40,11 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: linear-gradient(67.7deg, rgb(252, 185, 125) -0.9%, rgb(245, 231, 106) 22.8%, rgb(160, 236, 208) 50.3%, rgb(57, 178, 209) 75.5%, rgb(183, 174, 193) 100.2%);
+    background-color: whitesmoke;
+    
+    /* background: linear-gradient(67.7deg, rgb(252, 185, 125) -0.9%, rgb(245, 231, 106) 22.8%, rgb(160, 236, 208) 50.3%, rgb(57, 178, 209) 75.5%, rgb(183, 174, 193) 100.2%); */
     font-size: medium;
     padding: 9px;
-    text-decoration: aliceblue;
 }
 
 .nav-menu {
@@ -49,20 +55,20 @@ nav {
 
 .nav-menu a, .navbar-logo a {
   text-decoration: none;
-  color:  aliceblue;
   padding-left: 12px;
+  color: black;
 }
 
-h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+h1, p, h3, h2, h6 {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 200;
   padding: 10px;
   background-color: aliceblue
 
 }
 
 .hero-banner {
-  background-image: url(assets/images/susan-wilkinson-D0yZINtqa6c-unsplash.png);
+  background-image: url(assets/images/bronze-theme.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -79,4 +85,256 @@ h1 {
 
 .navbar-logo, .nav-menu {
    font-family: 'Barlow', sans-serif;
+}
+
+
+.projects-wrapper {
+  /* background-color: aquamarine; */
+  background-image: url(assets/images/blue-theme.png);
+  background-attachment: fixed;
+  padding-top: 45px;
+  margin-top: 45px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* slideshow */
+
+.slideshow-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 50%%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+}
+
+/* project-cards + container */
+.project-card-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  max-width: 400px;
+  min-width: 400px;
+  padding: 20px;
+  margin: 20px;
+  background-color: whitesmoke;
+  font-family: 'Barlow', sans-serif;
+
+}
+
+.project-card h1 {
+    background: none;
+    font-size: 15px;
+}
+
+.project-card p {
+    padding-top: 15px;
+    background: none;
+    font-size: 15px;
+}
+
+.project-card h1 {
+    background: none;
+    font-size: 15px;
+}
+
+
+/* skills section design */
+
+.skills-wrapper {
+  /* background-color: aquamarine; */
+  background-image: url(assets/images/bronze-theme.jpg);
+  background-attachment: fixed;
+  padding-top: 45px;
+  margin-top: 45px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.skills-card {
+  max-width: 400px;
+  min-width: 400px;
+  padding: 20px;
+  margin: 20px;
+  background-color: whitesmoke;
+  font-family: 'Barlow', sans-serif;
+
+}
+
+/* About */
+
+.about-me-wrapper {
+  background-image: url(assets/images/blue-theme.png);
+  background-attachment: fixed;
+  padding-top: 45px;
+  margin-top: 45px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+
+.about-info-card {
+  max-width: 400px;
+  min-width: 400px;
+  padding: 20px;
+  margin: 20px;
+  background-color: whitesmoke;
+  font-family: 'Barlow', sans-serif;
+}
+
+/* Writing styling */
+
+.writing-wrapper {
+  background-image: url(assets/images/bronze-theme.jpg);
+  background-attachment: fixed;
+  padding-top: 45px;
+  margin-top: 45px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.writing-info-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+
+.writing-card {
+  max-width: 400px;
+  min-width: 400px;
+  padding: 20px;
+  margin: 20px;
+  background-color: whitesmoke;
+  font-family: 'Barlow', sans-serif;
+}
+
+/* Resources  */
+
+.resources-wrapper {
+  background-image: url(assets/images/blue-theme.png);
+  background-attachment: fixed;
+  padding-top: 45px;
+  margin-top: 45px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resources-card-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+
+.resources-card {
+  max-width: 400px;
+  min-width: 400px;
+  padding: 20px;
+  margin: 20px;
+  background-color: whitesmoke;
+  font-family: 'Barlow', sans-serif;
+}
+
+/* contact styling */
+
+.contact-wrapper {
+  background-image: url(assets/images/bronze-theme.jpg);
+  background-attachment: fixed;
+  padding-top: 45px;
+  margin-top: 45px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.contact-element {
+  max-width: 400px;
+  min-width: 400px;
+  padding: 20px;
+  margin: 20px;
+  text-decoration: none;
+  background-color: whitesmoke;
+  font-family: 'Barlow', sans-serif;
+}
+
+.contact-element ul {
+    text-decoration: none;
+}
+
+.contact-image {
+    max-width: 200px;
 }

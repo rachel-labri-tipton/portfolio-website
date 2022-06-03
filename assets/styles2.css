@@ -1,0 +1,592 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: HKGrotesk Medium;
+    src: url(../assets/fonts/HKGrotesk-Medium.ttf);
+}
+
+@font-face {
+    font-family: HKGrotesk Bold;
+    src: url(../assets/fonts/HKGrotesk-Bold.ttf);
+}
+
+.about, .projects, .experience {
+  padding-top: 45px;
+}
+
+body {
+  font-family: "HKGrotesk Medium", trebuchet, Arial, sans-serif;
+  color: #3C3C3C;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-software {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h2 {
+  color: #4DC0B4;
+  font-family: "HKGrotesk Medium", trebuchet, Arial, sans-serif;
+  font-size: 50px;
+  margin: 60px 0;
+}
+
+h3 {
+  color: #4DC0B4;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  font-size: 17px;
+  padding: 12px;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu a, .nav-logo a {
+  text-decoration: none;
+  color: #3C3C3C;
+  padding-left: 12px;
+}
+
+.hero {
+  background-image: url('../assets/images/bg1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.hero h1 {
+  color: white;
+  text-align: center;
+  font-size: 28px;
+}
+
+.hero-arrow {
+  color: white;
+  align-self: center;
+  font-size: 35px;
+  margin-top: 75px;
+  animation: bounce 1.5s linear infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  25%, 75% {
+    transform: translateY(-15px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+}
+
+img.name-gif {
+  width: 50%;
+  align-self: center;
+  margin: 20px 0 30px 0;
+}
+
+.software-icons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.software-icons li {
+  justify-content: center;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 5%;
+  margin: 20px 5px 5px 5px;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  font-size: 13px;
+}
+
+.software-icons li i {
+  font-size: 28px;
+}
+
+span {
+  margin-top: 7px;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #4DC0B4;
+  transition: .3s;
+}
+
+a.footer-email:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.bulma {
+  background-image: url('../assets/images/bulma-1.png');
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.sqla {
+  background-image: url('../assets/images/sqla-1.png');
+  width: 50px;
+  height: 30px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.flask {
+  background-image: url('../assets/images/flask-1.png');
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.pitch, .experience-content {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.bio {
+  flex-basis: 0;
+  flex-grow: 3;
+  padding-right: 15px;
+}
+
+.skills {
+  flex-basis: 0;
+  flex-grow: 2;
+  padding-left: 15px;
+}
+
+.skills h3 {
+  margin-bottom: 5px;
+}
+
+.skills p {
+  margin-bottom: 14px;
+}
+
+.experience h3, .experience h4 {
+  margin-bottom: 4px;
+}
+
+.experience h5 {
+  margin-bottom: 13px;
+}
+
+.project-image {
+  width: 90%;
+}
+
+.project-image.treasured, .project-image.sewnsews, .project-image.sushisquish {
+  margin-top: 55px;
+}
+
+.project-1, .project-2, .project-3, .project-4 {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0;
+  flex-grow: 1;
+  padding-right: 30px;
+}
+
+.project-info img {
+  width: 85%;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  flex-basis: 0;
+  flex-grow: 3;
+  padding-right: 30px;
+}
+
+.tech-icons {
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.tech-icons li {
+  margin: 8px 8px 0 0;
+}
+
+.custom-icon {
+  display: flex;
+  font-size: 20px;
+}
+
+.custom-icon i.bulma {
+  width: 13px;
+  height: 20px;
+}
+
+.custom-icon i.flask {
+  width: 20px;
+  height: 20px;
+}
+
+.custom-icon i.sqla {
+  width: 25px;
+  height: 20px;
+}
+
+a.button {
+  text-decoration: none;
+  color: #4DC0B4;
+  font-size: 13px;
+  font-family: HKGrotesk Bold, trebuchet, Arial, sans-serif;
+  text-align: center;
+  border: 1px solid #4DC0B4;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 4px;
+}
+
+a.button:hover {
+  color: white;
+  background-color: #4DC0B4;
+  transition: .3s;
+}
+
+.button i {
+  padding-right: 8px;
+}
+
+.experience-item {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding-right: 30px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../assets/images/bg2-2.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.image-section {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 175px;
+}
+
+.fabric-1 {
+  background-image: url('../assets/images/bg2-2.jpg');
+}
+
+.fabric-2 {
+  background-image: url('../assets/images/bg3.jpg');
+}
+
+.fabric-3 {
+  background-image: url('../assets/images/bg4.jpg');
+}
+
+.fabric-4 {
+  background-image: url('../assets/images/bg1.jpg');
+}
+
+.fabric-5 {
+  background-image: url('../assets/images/bg6.jpg');
+}
+
+.footer-heading {
+  color: white;
+  font-family: "HKGrotesk Medium", trebuchet, Arial, sans-serif;
+  font-size: 50px;
+  margin: 60px 0 0 0;
+  align-self: center;
+}
+
+.footer-email {
+  color: white;
+  text-decoration: none;
+  align-self: center;
+  border: 2px solid white;
+  margin: 35px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin-bottom: 100px;
+}
+
+.footer-icon {
+  color: white;
+  font-size: 35px;
+  padding: 7px;
+}
+
+.toggle-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  nav ul.active {
+    display:none;
+  }
+
+  nav {
+    position: fixed;
+    width: 100%;
+  }
+
+  nav ul {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 10px 18px;
+    background:white;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1000;
+  }
+
+  nav li {
+    margin:5px 0px 5px 0px;
+    float:none;
+    display:block;
+  }
+
+  nav a {
+    display:block;
+  }
+
+  .toggle-nav {
+    float:left;
+    display:inline-block;
+    transition:color linear 0.15s;
+    color: #3C3C3C;
+  }
+
+  .toggle-nav:hover, .toggle-nav.active {
+    text-decoration:none;
+    color: #3C3C3C;
+  }
+
+  a:hover {
+    color: #3C3C3C;
+  }
+
+  .hero, .image-section, footer {
+    background-attachment: initial;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+img.name-gif {
+  width: 85%;
+  align-self: center;
+  margin: 25px 0 40px 0;
+}
+
+.nav-logo a {
+  padding-left: 0;
+}
+
+.hero h1 {
+  font-size: 25px;
+}
+
+h2 {
+  margin: 50px 0;
+}
+
+.pitch, .experience-content {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.experience-item {
+  padding-right: 0;
+  padding-bottom: 30px;
+}
+
+.bio {
+  margin-bottom: 30px;
+}
+
+.skills {
+  padding-left: 0;
+}
+
+.project-1, .project-2, .project-3, .project-4 {
+  display: block;
+  margin-bottom: 65px;
+}
+
+.project-info img, .tech-icons {
+  align-self: center;
+}
+
+.tech-icons {
+  font-size: 25px;
+}
+
+.project-info img {
+  width: 70%;
+}
+
+img.tippled-logo, img.sushi-squish-logo {
+  width: 50%;
+}
+
+.project-info, .project-description {
+  padding-right: 0;
+  padding-top: 20px;
+}
+
+a.button {
+  font-size: 18px;
+  padding: 6px;
+}
+
+.bio, .skills p, .project-description, .experience-item p {
+  line-height: 1.4;
+}
+
+.software-icons {
+  display: none;
+}
+
+.about, .experience {
+  padding-top: 20px;
+}
+
+}
+
+
+
+/* code for slideshow */
+
+<section>
+           <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="./assets/images/susan-wilkinson-D0yZINtqa6c-unsplash.png" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="./assets/images/susan-wilkinson-95VpQJOr2AE-unsplash.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="./assets/images/susan-wilkinson-RZiTglNCeNc-unsplash.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+    </section>
+
+    /* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
