@@ -1,5 +1,6 @@
-* {
-box-sizing: border - box;
-margin: 0;
-padding: 0;
+console.log('JS loaded');
+
+function toggleNavigation() {
+    const navUl = ('nav ul');
+    navUl.classList.toggle('active')
 }

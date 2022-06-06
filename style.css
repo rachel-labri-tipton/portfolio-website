@@ -61,6 +61,10 @@ nav {
   color: #17494D;
 }
 
+.navbar-logo, .nav-menu {
+   font-family: 'Barlow', sans-serif;
+}
+
 h1, p, h3, h2, h6 {
   font-family: 'Monserrat', sans-serif;
   font-weight: 200;
@@ -171,9 +175,6 @@ h1, p, h3, h2, h6 {
 
 
 
-.navbar-logo, .nav-menu {
-   font-family: 'Barlow', sans-serif;
-}
 
 
 .projects-wrapper {
@@ -312,7 +313,7 @@ span {
 /* About */
 
 .about-me-wrapper {
-  background-image: url(assets/images/blue-theme.png);
+  background: white;
   background-attachment: fixed;
   padding-top: 45px;
   margin-top: 45px;
@@ -419,7 +420,7 @@ span {
 /* contact styling */
 
 .contact-wrapper {
-  background-image: url(assets/images/blue-theme.png);
+  background: white;
   background-attachment: fixed;
   padding-top: 45px;
   margin-top: 45px;
@@ -433,23 +434,25 @@ span {
 }
 
 .contact-container {
-  padding-top: 50px;
+  padding-top: 25px;
   padding-bottom: 50px;
-  width: 75%;
+  width: 50%;
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   margin: 0 auto;
   flex-wrap: wrap;
 }
 
+
+
 .contact-element {
-  max-width: 200px;
+  max-width: 400px;
   min-width: 100px;
   padding: 20px;
   margin: 20px;
   text-decoration: none;
-  background-color: whitesmoke;
+  background-color: white;
   font-family: 'Barlow', sans-serif;
 }
 
@@ -459,26 +462,49 @@ span {
     border-radius: 50%;
 }
 
-.contact-icon {
-  max-width: 200px;
-  min-width: 100px;
-  height: 100px;
-  padding: 20px;
-  margin: 20px;
-  text-decoration: none;
-  background-color: whitesmoke;
-  font-family: 'Barlow', sans-serif;
+
+
+.contact-element ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    nav-right: auto;
 }
 
-.toggle-nav.active {
+.contact-icon {
+  font-size: 35px;
+  padding: 7px;
+  color: #17494D;
+}
+
+
+.nav-menu a, .navbar-logo a {
+  text-decoration: none;
+  font-family: 'Monserrat', sans-serif;
+  font-weight: 100;
+  padding-left: 12px;
+  color: #17494D;
+}
+
+.toggle-nav {
   display: none;
 }
 
 
 @media only screen and (max-width: 768px) {
-  nav ul.active {
-    display:none;
+
+
+
+  .toggle-nav {
+    display:inline-block;
+    transition:color linear 0.15s;
+    color: #3C3C3C;
   }
+
+    .navbar-logo {
+            overflow: hidden;
+            position: relative;
+        }
 
   nav {
     position: fixed;
@@ -508,7 +534,6 @@ span {
   }
 
   .toggle-nav {
-    float:left;
     display:inline-block;
     transition:color linear 0.15s;
     color: #3C3C3C;
@@ -519,8 +544,8 @@ span {
     color: #3C3C3C;
   }
 
-  a:hover {
-    color: #3C3C3C;
+  a :hover {
+    color: aqua;
   }
 }
 
