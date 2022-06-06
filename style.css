@@ -40,8 +40,8 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: whitesmoke;
-    
+    background-color: white;
+    font-family: 'Proxima Nova', sans-serif;
     /* background: linear-gradient(67.7deg, rgb(252, 185, 125) -0.9%, rgb(245, 231, 106) 22.8%, rgb(160, 236, 208) 50.3%, rgb(57, 178, 209) 75.5%, rgb(183, 174, 193) 100.2%); */
     font-size: medium;
     padding: 9px;
@@ -55,12 +55,14 @@ nav {
 
 .nav-menu a, .navbar-logo a {
   text-decoration: none;
+  font-family: 'Monserrat', sans-serif;
+  font-weight: 100;
   padding-left: 12px;
-  color: black;
+  color: #17494D;
 }
 
 h1, p, h3, h2, h6 {
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: 'Monserrat', sans-serif;
   font-weight: 200;
   padding: 10px;
 
@@ -71,29 +73,34 @@ h1, p, h3, h2, h6 {
 .animate-character
 {
   
-  background-image: linear-gradient(
+  background-image: radial-gradient(circle at 10% 20%, rgb(253, 239, 132) 0%, rgb(247, 198, 169) 54.2%, rgb(21, 186, 196) 100.3%);
+  
+  /* linear-gradient(
     -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
+    #a99ae0 0%,
+    #44107a 10%,
+    #ff1361 30%,
+    #fff800 50%
+    #ff1361 70%,
+    #44107a 100%,
+    
+  ); */
   background-size: auto auto;
   background-clip: border-box;
-  background-size: 200% auto;
+  background-size: 10% auto;
   color: #fff;
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear 5;
+  animation: textclip 15s linear 2;
   display: inline-block;
       font-size: 70px;
 }
 
 @keyframes textclip {
   to {
-    background-position: 200% center;
+    background-position: 175%;
   }
 }
 
@@ -161,57 +168,6 @@ h1, p, h3, h2, h6 {
   align-items: center;
 }
 
-.content {
-  position: relative;
-}
-
-.content h2 {
-  color: #fff;
-  font-size: 8em;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-
-.content h2:nth-child(1) {
-  color: transparent;
-  -webkit-text-stroke: 2px #03a9f4;
-}
-
-.content h2:nth-child(2) {
-  color: #03a9f4;
-  animation: animate 4s ease-in-out infinite;
-}
-
-@keyframes animate {
-  0%,
-  100% {
-    clip-path: polygon(
-      0% 45%,
-      16% 44%,
-      33% 50%,
-      54% 60%,
-      70% 61%,
-      84% 59%,
-      100% 52%,
-      100% 100%,
-      0% 100%
-    );
-  }
-
-  50% {
-    clip-path: polygon(
-      0% 60%,
-      15% 65%,
-      34% 66%,
-      51% 62%,
-      67% 50%,
-      84% 45%,
-      100% 46%,
-      100% 100%,
-      0% 100%
-    );
-  }
-}
 
 
 
@@ -288,13 +244,11 @@ h1, p, h3, h2, h6 {
 /* skills section design */
 
 .skills-wrapper {
-  /* background-color: aquamarine; */
-  background-image: url(assets/images/bronze-theme.jpg);
+  background-image: url(./assets/images/blue-theme.png);
   background-attachment: fixed;
-  padding-top: 45px;
-  margin-top: 45px;
   background-position: center;
   background-size: cover;
+  margin-top: 45px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -302,9 +256,9 @@ h1, p, h3, h2, h6 {
 }
 
 .skills-container {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  width: 50%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 75%;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -320,6 +274,41 @@ h1, p, h3, h2, h6 {
 
 }
 
+/* skills icons */
+
+.software-icons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.software-icons li {
+  justify-content: center;
+  border: 1px solid rgba(0,0,0,.125);
+  background-color: white;
+  border-radius: 5%;
+  margin: 20px 5px 5px 5px;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  font-size: 13px;
+}
+
+.software-icons li i {
+  font-size: 28px;
+}
+
+span {
+  margin-top: 7px;
+}
+
+.icon-cell {
+  display: flex;
+  flex-direction: column;
+  font-family: Proxima Nova, sans-serif;
+}
 /* About */
 
 .about-me-wrapper {
@@ -481,14 +470,69 @@ h1, p, h3, h2, h6 {
   font-family: 'Barlow', sans-serif;
 }
 
+.toggle-nav.active {
+  display: none;
+}
 
-@media screen {
-  
+
+@media only screen and (max-width: 768px) {
+  nav ul.active {
+    display:none;
+  }
+
+  nav {
+    position: fixed;
+    width: 100%;
+  }
+
+  nav ul {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 10px 18px;
+    background:white;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1000;
+  }
+
+  nav li {
+    margin:5px 0px 5px 0px;
+    float:none;
+    display:block;
+  }
+
+  nav a {
+    display:block;
+  }
+
+  .toggle-nav {
+    float:left;
+    display:inline-block;
+    transition:color linear 0.15s;
+    color: #3C3C3C;
+  }
+
+  .toggle-nav:hover, .toggle-nav.active {
+    text-decoration:none;
+    color: #3C3C3C;
+  }
+
+  a:hover {
+    color: #3C3C3C;
+  }
 }
 
 
 
 
-@media screen {
+@media only screen and (max-width: 480px) {
+.hero h1 {
+  font-size: 25px;
+}
 
+h2 {
+  margin: 50px 0;
+}
 }
