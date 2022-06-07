@@ -80,6 +80,7 @@ nav {
 .nav-menu a, .navbar-logo a {
   text-decoration: none;
   font-family: 'Monserrat', sans-serif;
+  font-size: 20px;
   font-weight: 100;
   padding-left: 12px;
   color: #17494D;
@@ -232,7 +233,7 @@ h1, p, h3, h2, h6 {
 .project-card-container {
   padding-top: 50px;
   padding-bottom: 50px;
-  width: 75%;
+  width: 90%;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -240,32 +241,68 @@ h1, p, h3, h2, h6 {
 }
 
 .project-card {
-  max-width: 400px;
-  min-width: 400px;
+  max-width: 50%;
+  min-width: 50%;
+  display: block;
+  /* flex-direction: column;
+  justify-content: space-between; */
+  padding: 20px;
+  margin: 20px;
+  color: white;
+  background-color: #15224e;
+  font-family: 'Monserrat', sans-serif;
+
+}
+
+.project-image {
+  width: 400px;
+  height: 300px;
+  border-radius: 5%;
+ 
+}
+
+.project-card-text {
+  background-color: white;
+  color: #15224e;
+  padding: 5px;
+}
+
+.education-card-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: transparent;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.education-card {
   padding: 20px;
   margin: 20px;
   color: white;
   background-color: #15224e;
   font-family: 'Barlow', sans-serif;
-
 }
+
+
 
 .project-card h1 {
     background: none;
     font-size: 15px;
-     font-family: 'Barlow', sans-serif;
 }
 
 .project-card p {
     padding-top: 15px;
     background: none;
-    font-size: 15px;
-    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
 }
 
 .project-card h1 {
+    display: flex;
+    flex-direction: row;
     background: none;
-    font-size: 15px;
+    font-size: 30px;
 }
 
 /* button styling */
@@ -394,6 +431,8 @@ span {
   background-color: white;
   font-family: 'Barlow', sans-serif;
 }
+
+
 
 /* Writing styling */
 
