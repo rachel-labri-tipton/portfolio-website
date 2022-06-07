@@ -25,6 +25,30 @@
   justify-content: center;
   align-items: center;
 }
+.section-heading {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barlow', sans-serif;
+  font-size: 50px;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.about-me-section-heading {
+  background-color: #15224e;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barlow', sans-serif;
+  font-size: 50px;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
 
 .about, .projects, .writing, .contact, .skills, .resources {
   padding-top: 45px;
@@ -220,7 +244,8 @@ h1, p, h3, h2, h6 {
   min-width: 400px;
   padding: 20px;
   margin: 20px;
-  background-color: whitesmoke;
+  color: white;
+  background-color: #15224e;
   font-family: 'Barlow', sans-serif;
 
 }
@@ -228,17 +253,42 @@ h1, p, h3, h2, h6 {
 .project-card h1 {
     background: none;
     font-size: 15px;
+     font-family: 'Barlow', sans-serif;
 }
 
 .project-card p {
     padding-top: 15px;
     background: none;
     font-size: 15px;
+    font-family: 'Barlow', sans-serif;
 }
 
 .project-card h1 {
     background: none;
     font-size: 15px;
+}
+
+/* button styling */
+button {
+  text-decoration: none;
+  color: #15224e;
+  font-size: 20px;
+  font-family: 'Barlow', sans-serif;
+  text-align: center;
+  border: 1px solid #15224e;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 4px;
+}
+
+button:hover {
+  color: white;
+  background-color: #15224e;
+  transition: .3s;
+}
+
+.button i {
+  padding-right: 8px;
 }
 
 
@@ -328,9 +378,9 @@ span {
 .about-me-container {
   padding-top: 50px;
   padding-bottom: 50px;
-  width: 75%;
+  width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 0 auto;
   flex-wrap: wrap;
 }
@@ -341,7 +391,7 @@ span {
   min-width: 400px;
   padding: 20px;
   margin: 20px;
-  background-color: whitesmoke;
+  background-color: white;
   font-family: 'Barlow', sans-serif;
 }
 
@@ -538,12 +588,6 @@ span {
   nav ul li a :hover {
     color: aqua;
   }
-
-
-  /* .toggle-nav:hover, .toggle-nav.active {
-    text-decoration:none;
-    color: #3C3C3C;
-  } */
 
   a :hover {
     color: aqua;
