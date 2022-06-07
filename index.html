@@ -27,7 +27,7 @@
         <a href="#"> rlt </a>
     </div>
     <div>
-    <ul class="active nav-menu">
+    <ul class="hidden-menu nav-menu" id="dynamic-nav">
         <li><a href="#about">about</a></li>
         <li><a href="#projects">projects</a></li>
         <li><a href="#skills">skills</a></li>
@@ -35,7 +35,7 @@
         <li><a href="#writing">writing</a></li>
         <li><a href="#contact"/>contact</a></li>
     </ul>
-    <a onclick="toggleNavigation()" class="toggle-nav" href="#">
+    <a onclick="Menutoggle()" class="toggle-nav" href="#">
         <i class="fas fa-bars toggle-nav"></i>
       </a>
       </div>
@@ -360,4 +360,14 @@ Time Management  </p>
 
    
 </body>
+<script type="text/javascript">
+
+function Menutoggle()
+{
+  var navMenu = document.getElementById("dynamic-nav");
+  navMenu.classList.toggle("hidden-menu");
+}
+
+
+</script>
 </html>

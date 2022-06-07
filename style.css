@@ -493,7 +493,9 @@ span {
 
 @media only screen and (max-width: 768px) {
 
-
+  .nav-menu.hidden-menu {
+    display:none;
+  }
 
   .toggle-nav {
     display:inline-block;
@@ -533,16 +535,15 @@ span {
     display:block;
   }
 
-  .toggle-nav {
-    display:inline-block;
-    transition:color linear 0.15s;
-    color: #3C3C3C;
+  nav ul li a :hover {
+    color: aqua;
   }
 
-  .toggle-nav:hover, .toggle-nav.active {
+
+  /* .toggle-nav:hover, .toggle-nav.active {
     text-decoration:none;
     color: #3C3C3C;
-  }
+  } */
 
   a :hover {
     color: aqua;
