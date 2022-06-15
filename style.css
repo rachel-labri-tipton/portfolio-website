@@ -86,7 +86,7 @@ nav {
 }
 
  .nav-menu a:hover {
-    color: rgb(99, 71, 210);
+    color: #4ed3dc;
   }
 
 .navbar-logo, .nav-menu {
@@ -102,11 +102,11 @@ h1, p, h3, h2, h6 {
 }
 
  nav ul li a :hover {
-    color: rgb(99, 71, 210);
+    color: #4ed3dc;
   }
 
   a :hover {
-    color: rgb(99, 71, 210);
+    color: #4ed3dc;
   }
 
 /* hero banner text animation */
@@ -270,17 +270,10 @@ h1, p, h3, h2, h6 {
 }
 
 .project-image {
-  min-width: 400px;
+  max-width: 400px;
   height: 300px;
   border-radius: 5%;
  
-}
-
-.project-card-text {
-  background-color: white;
-  color: #15224e;
-  text-align: block;
-  padding: 5px;
 }
 
 .education-card-container {
@@ -441,14 +434,39 @@ span {
   flex-wrap: wrap;
 }
 
+.about-card-image-container {
+  max-width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
 .about-info-card {
-  max-width: 50%;
-  min-width: 30%;
+  max-width: 60%;
+  min-width: 60%;
   padding: 20px;
   margin: 20px;
   background-color: white;
   font-family: 'Barlow', sans-serif;
+}
+
+.image-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 60%;
+  min-width: 60%;
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  font-family: 'Barlow', sans-serif;
+}
+
+.image-card img {
+  max-width: 300px;
+  min-height: 300px;
+  border-radius: 50%;
 }
 
 .about-info-card h2 {
@@ -457,9 +475,15 @@ span {
   text-decoration: bold;
 }
 
+.about-info-card img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
+}
 .about-info-card p {
   font-size: 32px;
   font-family: 'Barlow', sans-serif;
+  padding-bottom: 45px;
 
 }
 
@@ -550,7 +574,7 @@ span {
   min-width: 400px;
   padding: 20px;
   margin: 20px;
-  background-color: whitesmoke;
+  background-color: white;
   font-family: 'Barlow', sans-serif;
 }
 
@@ -561,7 +585,7 @@ span {
   font-size: 20px;
   font-family: 'Barlow', sans-serif;
   text-align: center;
-  border: 1px solid white;
+  border: 1px solid #15224e ;
   border-radius: 5px;
   padding: 5px;
   margin: 4px;
@@ -693,23 +717,29 @@ button:hover {
   }
 
   nav ul li a :hover {
-    color: rgb(99, 71, 210);
+    color: #4ed3dc;
   }
 
   a :hover {
-    color: rgb(99, 71, 210);
+    color: #4ed3dc;
+  }
+}
+
+@media (max-width: 600px) {
+   {
+
+
   }
 }
 
 
-
-
 @media only screen and (max-width: 480px) {
 .hero h1 {
-  font-size: 25px;
+  font-size: 60px;
 }
 
 h2 {
   margin: 50px 0;
 }
 }
+
