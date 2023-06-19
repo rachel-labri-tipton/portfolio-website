@@ -5,14 +5,6 @@
   padding: 0;
 }
 
-
-
-
-/* .container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 15px;
-} */
 .container {
   background-image: url(/assets/images/susan-wilkinson-RZiTglNCeNc-unsplash.jpg);
   background-attachment: fixed;
@@ -98,7 +90,6 @@ h1, p, h3, h2, h6 {
   font-weight: 100;
   padding: 10px;
 
-
 }
 
  nav ul li a :hover {
@@ -112,20 +103,7 @@ h1, p, h3, h2, h6 {
 /* hero banner text animation */
 .animate-character
 {
-  
   background-image: radial-gradient(circle at 10% 20%, rgb(253, 239, 132) 0%, rgb(247, 198, 169) 54.2%, rgb(21, 186, 196) 100.3%);
-  
-  /* linear-gradient(
-    -225deg,
-    #a99ae0 0%,
-    #44107a 10%,
-    #ff1361 30%,
-    #fff800 50%
-    #ff1361 70%,
-    #44107a 100%,
-    
-  ); */
-  background-size: auto auto;
   background-clip: border-box;
   background-size: 10% auto;
   color: #fff;
@@ -134,8 +112,8 @@ h1, p, h3, h2, h6 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 15s linear 2;
-  display: inline-block;
-      font-size: 70px;
+  display: inline-block; 
+  font-size: 70px;
 }
 
 @keyframes textclip {
@@ -149,27 +127,22 @@ h1, p, h3, h2, h6 {
   animation: color-animation 4s linear infinite;
 }
 
-.title-word-1 {
-  --color-1: #DF8453;
-  --color-2: #3D8DAE;
-  --color-3: #E4A9A8;
-}
 
-.title-word-2 {
+.title-word-1 {
   --color-1: #DBAD4A;
   --color-2: #ACCFCB;
   --color-3: #17494D;
 }
 
-.title-word-3 {
-  --color-1: #ACCFCB;
-  --color-2: #E4A9A8;
-  --color-3: #ACCFCB;
+.title-word-2 {
+  --color-1: #17494D;
+  --color-2: #ACCFCB;
+  --color-3: #3D8DAE;
 }
 
-.title-word-4 {
+.title-word-3 {
   --color-1: #3D8DAE;
-  --color-2: #DF8453;
+  --color-2:#DF8453;
   --color-3: #E4A9A8;
 }
 
@@ -181,63 +154,43 @@ h1, p, h3, h2, h6 {
   66%   {color: var(--color-3)}
   99%   {color: var(--color-3)}
   100%  {color: var(--color-1)}
-}
-
-
+} 
 
 .title {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 5.5vw;
-  text-transform: uppercase;
+  text-align: center;
 }
-
-
 
 
 .hero-banner {
   background:white;
-  background-attachment: fixed;
+  background-position: fixed;
   background-position: center;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: inherit;
 }
-
-
-
-
-
 
 .projects-wrapper {
   /* background-color: aquamarine; */
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url(assets/images/blue-theme.png);
   background-attachment: fixed;
   padding-top: 45px;
   margin-top: 45px;
   background-position: center;
   background-size: cover;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* slideshow */
-
-.slideshow-container {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  width: 50%%;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  flex-wrap: wrap;
-
+  
 }
 
 /* project-cards + container */
@@ -725,16 +678,31 @@ button:hover {
   }
 }
 
-@media (max-width: 600px) {
-   {
 
 
-  }
+
+@media only screen and (max-width: 768px) {
+.projects-wrapper {
+  /* background-color: aquamarine; */
+  max-width: 100%;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  background: #0b396e;
+  background-attachment: fixed;
+  padding-top: 45px;
+  margin-top: 45px;
+  background-position: center;
+  background-size: cover;
+  
 }
 
+.skills-container {
+  flex-direction: column;
+  max-width: fit-content;
+}
 
-@media only screen and (max-width: 480px) {
-.hero h1 {
+.hero-banner h1 {
   font-size: 60px;
 }
 
