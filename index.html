@@ -29,6 +29,7 @@
     <div>
     <ul class="hidden-menu nav-menu" id="dynamic-nav">
         <li><a href="#about">about</a></li>
+        <li><a href="#work">work</a></li>
         <li><a href="#projects">projects</a></li>
         <li><a href="#skills">skills</a></li>
          <li><a href="#resources">resources</a></li>
@@ -60,7 +61,7 @@
 
     <!-- Projects -->
     
-    <section class="projects-wrapper" id="projects">
+    <section class="projects-wrapper" id="work">
 
         <div >
            <h1 class="section-heading">work</h1>
@@ -117,12 +118,19 @@
 
                 </div>
               </div>
+            </section>
 
 <!-- Bootcamp Projects -->
-              <div>
-            <div>
-        </div>
-             <div class="project-card">
+<section class = "projects-wrapper" id="projects">
+  <div>
+              <h1 class="section-heading">projects</h1>
+          </div>
+<div class="slideshow-container fade">
+
+  <!-- Full images with numbers and message Info -->
+  <div class="Containers">
+    <div class="MessageInfo">1 / 4</div>
+ <div class="project-card">
             <div>
                 <h1>The Community Project</h1>
             <h3>Python Django /  React / PostGreSQL</h3>
@@ -137,10 +145,14 @@
             <a href="https://github.com/rachel-labri-tipton/the-community-project-frontend"><button>Read Code</button></a>
             
         </div>
-            
-             </div>
+  </div>
+  </div>
 
-            <div class="project-card">
+ 
+
+  <div class="Containers">
+    <div class="MessageInfo">2 / 4</div>
+  <div class="project-card">
             <h1>Simply Good Food</h1>
             <h3>Mongoose / MongoDB / React / Node.js</h3>
             <img class="project-image" src="assets/images/SGF-image.png" alt="recipe site">
@@ -153,7 +165,11 @@
             </div>
             
         </div>
-            <div class="project-card">
+  </div>
+
+   <div class="Containers">
+     <div class="MessageInfo">3 / 4</div>
+    <div class="project-card">
             <h1>The LSS (Local Space Station)</h1>
             <h3>JavaScript / React / Insomnia </h3>
               <img class="project-image" src="assets/images/LSS2.png" alt="recipe site">
@@ -164,7 +180,11 @@
             <a href="https://github.com/rachel-labri-tipton/project-2"><button>Read Code</button></a>
             </div>
             </div>
-            <div class="project-card">
+  </div>
+
+    <div class="Containers">
+      <div class="MessageInfo">4 / 4</div>
+     <div class="project-card">
             <h1>Tetris 2.022</h1>
             <h3>HTML / CSS / Vanilla JavaScript </h3>
             <img class="project-image" src="assets/images/Tetris-image.png" alt="tetris blocks">
@@ -175,15 +195,26 @@
             <a href="https://github.com/rachel-labri-tipton/sei-project-1-tetris"><button>Read Code</button></a>
             </div>
         </div>
-        </div>
-        </div>
-       
+  </div>
 
-    </section>
+  
 
+  <!-- Back and forward buttons -->
+  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
 
+<!-- The circles/dots -->
+<div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+  <span class="dots" onclick="currentSlide(4)"></span>
+</div> 
 
-
+</section>
+            
     <!-- Skills & Frameworks -->
     <section class="skills-wrapper" id="skills">
     <div class="skills-container">
@@ -194,10 +225,6 @@
              <li class="icon-cell">
             <i class="fab fa-github-square"></i>
             <span>GitHub</span>
-          </li>  
-          <li class="icon-cell">
-            <i class="fab fa-git-alt"></i>
-            <span>git</span>
           </li>  
        <li class="icon-cell">
             <i class="fab fa-html5"></i>
@@ -213,7 +240,10 @@
             <i class="fab fa-js-square"></i>
             <span>JavaScript</span>
           </li>
-
+          <li class="icon-cell">
+            <i class="devicon-figma-plain"></i>
+            <span>Figma</span>
+          </li>
             <li class="icon-cell">
             <i class="fab fa-react"></i>
             <span>React</span>
